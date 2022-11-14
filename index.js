@@ -10,7 +10,7 @@ app.use(cors())
 dotenv.config()
 
 app.use("/api/v1/9ja-tours", router)
-const PORT = process.env.PORT || 5000
+const PORT = "https://explore9ja.herokuapp.com/"
 const URI = process.env.CONNECTION_STRING
 
 app.get('/', (req, res) => {
